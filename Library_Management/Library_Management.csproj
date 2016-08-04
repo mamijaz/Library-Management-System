@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F3648B0-C9AD-40E5-9589-A8C2AFF441E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library_Management</RootNamespace>
+    <AssemblyName>Library_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books.Designer.cs">
+      <DependentUpon>Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Delay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Delay.Designer.cs">
+      <DependentUpon>Book_Delay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Detaile_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Detaile_Search.Designer.cs">
+      <DependentUpon>Book_Detaile_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catagory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catagory.Designer.cs">
+      <DependentUpon>Catagory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="Create_New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_New_User.Designer.cs">
+      <DependentUpon>Create_New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delay_Book.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Delay_Book.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Income_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income_Reports.Designer.cs">
+      <DependentUpon>Income_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Book_Maintanance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Book_Maintanance.Designer.cs">
+      <DependentUpon>Interface_Book_Maintanance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Lending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Lending.Designer.cs">
+      <DependentUpon>Interface_Lending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Main.Designer.cs">
+      <DependentUpon>Interface_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Member.Designer.cs">
+      <DependentUpon>Interface_Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Reports.Designer.cs">
+      <DependentUpon>Interface_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Search.Designer.cs">
+      <DependentUpon>Interface_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Users.Designer.cs">
+      <DependentUpon>Interface_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lending.Designer.cs">
+      <DependentUpon>Lending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library_Management.cs" />
+    <Compile Include="Lost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lost.Designer.cs">
+      <DependentUpon>Lost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members Who Are  Outsiders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members Who Are  Outsiders.Designer.cs">
+      <DependentUpon>Members Who Are  Outsiders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members Who Are Government Staffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members Who Are Government Staffs.Designer.cs">
+      <DependentUpon>Members Who Are Government Staffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members Who Are Students And Who Reside Outside.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members Who Are Students And Who Reside Outside.Designer.cs">
+      <DependentUpon>Members Who Are Students And Who Reside Outside.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members Who Pay Tax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members Who Pay Tax.Designer.cs">
+      <DependentUpon>Members Who Pay Tax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multimedia.Designer.cs">
+      <DependentUpon>Multimedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public_Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public_Library.Designer.cs">
+      <DependentUpon>Public_Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference.Designer.cs">
+      <DependentUpon>Reference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reset_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reset_Password.Designer.cs">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return.Designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Book.Designer.cs">
+      <DependentUpon>Search_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Report.Designer.cs">
+      <DependentUpon>Transaction_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Reports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transaction_Reports.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="30_Days.rdlc" />
+    <EmbeddedResource Include="60_Days.rdlc" />
+    <EmbeddedResource Include="90_Days.rdlc" />
+    <EmbeddedResource Include="Books.resx">
+      <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Delay.resx">
+      <DependentUpon>Book_Delay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Detaile_Search.resx">
+      <DependentUpon>Book_Detaile_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Lending.rdlc" />
+    <EmbeddedResource Include="Book_Lost.rdlc" />
+    <EmbeddedResource Include="Book_Return.rdlc" />
+    <EmbeddedResource Include="Catagory.resx">
+      <DependentUpon>Catagory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_New_User.resx">
+      <DependentUpon>Create_New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income_Reports.resx">
+      <DependentUpon>Income_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Book_Maintanance.resx">
+      <DependentUpon>Interface_Book_Maintanance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Lending.resx">
+      <DependentUpon>Interface_Lending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Main.resx">
+      <DependentUpon>Interface_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Member.resx">
+      <DependentUpon>Interface_Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Reports.resx">
+      <DependentUpon>Interface_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Search.resx">
+      <DependentUpon>Interface_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Users.resx">
+      <DependentUpon>Interface_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lending.resx">
+      <DependentUpon>Lending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lost.resx">
+      <DependentUpon>Lost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members Who Are  Outsiders.resx">
+      <DependentUpon>Members Who Are  Outsiders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members Who Are Government Staffs.resx">
+      <DependentUpon>Members Who Are Government Staffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members Who Are Students And Who Reside Outside.resx">
+      <DependentUpon>Members Who Are Students And Who Reside Outside.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members Who Pay Tax.resx">
+      <DependentUpon>Members Who Pay Tax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Registration.rdlc" />
+    <EmbeddedResource Include="Multimedia.rdlc" />
+    <EmbeddedResource Include="Multimedia.resx">
+      <DependentUpon>Multimedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Public_Library.resx">
+      <DependentUpon>Public_Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference.rdlc" />
+    <EmbeddedResource Include="Reference.resx">
+      <DependentUpon>Reference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset_Password.resx">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return.resx">
+      <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Book.resx">
+      <DependentUpon>Search_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Report.resx">
+      <DependentUpon>Transaction_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Delay_Book.xsc">
+      <DependentUpon>Delay_Book.xsd</DependentUpon>
+    </None>
+    <None Include="Delay_Book.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Delay_Book.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Delay_Book.xss">
+      <DependentUpon>Delay_Book.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Transaction_Reports.xsc">
+      <DependentUpon>Transaction_Reports.xsd</DependentUpon>
+    </None>
+    <None Include="Transaction_Reports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transaction_Reports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Transaction_Reports.xss">
+      <DependentUpon>Transaction_Reports.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lending section.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book reference.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user accounts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book reports.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multimedia section.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book maintanance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income reports.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_Catagorys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_Manege.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_Lendings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_Return.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_Lost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member_Outsider.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member_Tax_Payer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member_Student.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member_Government_Staff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_Books.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_Specific_Book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_User_Account.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change_Password.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foegor_Pasword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tansaction reports.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
